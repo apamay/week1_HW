@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apamay.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Covert Thai bath to Usa dollar"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtThaiBath"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:background="@color/mallow"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/holo_orange_dark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="USA dollar"
+                        android:textColor="@android:color/holo_orange_dark" />
+
+                    <TextView
+                        android:id="@+id/lblUsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="TextView" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCvt"
+                android:onClick="thaibaht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="150dp"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Convert"
+                android:textColor="@android:color/background_light"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Sum two numbers"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="193dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 st No."
+                        android:textColor="@android:color/holo_orange_dark" />
+
+                    <EditText
+                        android:id="@+id/txtFirstNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:background="@color/mallow"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/holo_orange_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 nd No."
+                        android:textColor="@android:color/holo_orange_dark" />
+
+                    <EditText
+                        android:id="@+id/txtSecondNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@color/lightGray"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/holo_orange_dark" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCal"
+                    android:onClick="cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="Calculate"
+                    android:textColor="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/lblAnsSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Answer"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text='Show "A"'
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="193dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start No."
+                        android:textColor="@android:color/holo_orange_dark" />
+
+                    <EditText
+                        android:id="@+id/txtStartNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:background="@color/lightGray"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/holo_orange_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End No."
+                        android:textColor="@android:color/holo_orange_dark" />
+
+                    <EditText
+                        android:id="@+id/txtEndNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@color/mallow"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/holo_orange_dark" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:onClick="ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="OK"
+                    android:textColor="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/lblAnsA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Answer"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
